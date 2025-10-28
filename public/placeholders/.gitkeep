@@ -1,0 +1,35 @@
+# Placeholder Images Directory
+
+Place your images here with the following naming convention:
+
+## Required Placeholders:
+
+### Brand Logos
+- logo-brand.png (Promate logo, 200x200px recommended)
+- logo-toyota.png (Toyota logo, 200x100px)
+- logo-mitsubishi.png (Mitsubishi logo, 200x100px)
+- logo-honda.png (Honda logo, 200x100px)
+- logo-wuling.png (Wuling logo, 200x100px)
+
+### Hero Section
+- hero-1125x720.png (Main hero image, 1125x720px)
+
+### Product Showcase
+- showcase-square-800x800.png (Product cards, 800x800px square)
+
+### CTA Background
+- cta-background-1920x600.png (CTA ribbon background, 1920x600px)
+
+### Location
+- building-1200x900.png (Building/location photo, 1200x900px)
+
+### Product Detail
+- product-main-1200x800.png (Main product photo, 1200x800px)
+- thumb-240x240.png (Thumbnail images, 240x240px)
+
+## Image Guidelines:
+- Use high-quality images that match the dark automotive theme
+- Keep aspect ratios consistent with specifications
+- Optimize images for web (compress without losing quality)
+- Use WebP format when possible for better performance
+
