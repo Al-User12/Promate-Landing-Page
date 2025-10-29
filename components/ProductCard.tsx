@@ -12,8 +12,10 @@ interface ProductCardProps {
 
 export default function ProductCard({ slug, model, variant, image }: ProductCardProps) {
   const handleClick = () => {
-    // Save scroll position before navigating
-    sessionStorage.setItem('scrollPosition', window.scrollY.toString());
+    // Save current scroll position
+    const currentScroll = window.scrollY;
+    sessionStorage.setItem('homeScrollPosition', currentScroll.toString());
+    console.log('Saved scroll position:', currentScroll);
   };
 
   return (

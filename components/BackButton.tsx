@@ -1,24 +1,17 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import Image from "next/image";
 
 export default function BackButton() {
   const router = useRouter();
 
-  useEffect(() => {
-    // Save scroll position when leaving page
-    const handleBeforeUnload = () => {
-      sessionStorage.setItem('scrollPosition', window.scrollY.toString());
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
-  }, []);
-
   const handleBack = () => {
-    // Save current scroll is 0 (we're on detail page)
+    // Set flag that we're returning from detail page
     sessionStorage.setItem('fromDetailPage', 'true');
+    console.log('Back button clicked, flag set');
+    
+    // Navigate back
     router.back();
   };
 
@@ -27,22 +20,16 @@ export default function BackButton() {
       <div className="px-4 py-4 lg:px-6">
         <button
           onClick={handleBack}
-          className="inline-flex items-center gap-2 text-white hover:text-gray-300 transition-colors"
+          className="transition-transform hover:scale-110"
+          aria-label="Kembali"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-          <span className="text-sm font-medium">Kembali</span>
+          <Image
+            src="/static/Back-Button.png"
+            alt="Back"
+            width={32}
+            height={32}
+            className="w-8 h-8"
+          />
         </button>
       </div>
     </header>

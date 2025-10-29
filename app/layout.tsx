@@ -43,6 +43,15 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+              }
+            `,
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,600,500&display=swap" rel="stylesheet" />
