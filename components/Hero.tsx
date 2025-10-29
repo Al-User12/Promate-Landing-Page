@@ -82,7 +82,7 @@ export default function Hero() {
           {/* Hero Image */}
           <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-card">
             <Image
-              src="/placeholders/placeholder.svg"
+              src="/static/hero.png"
               alt="Custom Karpet Mobil Premium Promate"
               fill
               className="object-cover"
