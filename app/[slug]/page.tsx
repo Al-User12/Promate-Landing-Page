@@ -14,8 +14,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Land Cruiser 300 GR Sport.png",
+        alt: "Land Cruiser 300 GR Sport - Black Marble Coil Black - Thumbnail",
+      },
+      {
         src: "/images/Toyota/Land Cruiser 300 GR Sport/Foto dari Iyan (7) 1.png",
-        alt: "Land Cruiser 300 GR Sport - Black Marble Coil Black - Tampak Utama",
+        alt: "Land Cruiser 300 GR Sport - Tampak Utama",
       },
       {
         src: "/images/Toyota/Land Cruiser 300 GR Sport/Foto dari Iyan (8) 1.png",
@@ -37,8 +41,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Vellfire Hybrid.png",
+        alt: "Vellfire Hybrid - Black Fire Coil Black - Thumbnail",
+      },
+      {
         src: "/images/Toyota/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.40 (2).jpeg",
-        alt: "Vellfire Hybrid - Black Fire Coil Black - Tampak Utama",
+        alt: "Vellfire Hybrid - Tampak Utama",
       },
       {
         src: "/images/Toyota/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.40.jpeg",
@@ -60,8 +68,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Innova 2005 - 2015.png",
+        alt: "Innova 2005 - 2015 - Maroon Coil Maroon - Thumbnail",
+      },
+      {
         src: "/images/Toyota/Innova 2005 - 2015/Foto dari Iyan(2).jpg",
-        alt: "Innova 2005 - 2015 - Maroon Coil Maroon - Tampak Utama",
+        alt: "Innova 2005 - 2015 - Tampak Utama",
       },
       {
         src: "/images/Toyota/Innova 2005 - 2015/Foto dari Iyan(4).jpg",
@@ -83,8 +95,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Agya.png",
+        alt: "Agya - Coffee Coil Coffee - Thumbnail",
+      },
+      {
         src: "/images/Toyota/Agya/048acc9d-e987-48d0-9f81-bccf69297411.jpg",
-        alt: "Agya - Coffee Coil Coffee - Tampak Utama",
+        alt: "Agya - Tampak Utama",
       },
       {
         src: "/images/Toyota/Agya/11aa4dec-25c3-4871-ab3c-6112b00e51b7.jpg",
@@ -106,8 +122,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Freed 2014.png",
+        alt: "Freed 2014 - Carbon Coil Black - Thumbnail",
+      },
+      {
         src: "/images/Honda/Freed 2014/Foto dari Iyan(1).jpg",
-        alt: "Freed 2014 - Carbon Coil Black - Tampak Utama",
+        alt: "Freed 2014 - Tampak Utama",
       },
       {
         src: "/images/Honda/Freed 2014/Foto dari Iyan(10).jpg",
@@ -129,8 +149,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Jazz GK5.png",
+        alt: "Jazz GK5 - Maroon - Thumbnail",
+      },
+      {
         src: "/images/Honda/Jazz GK5/IMG-20250908-WA0043.jpg",
-        alt: "Jazz GK5 - Maroon - Tampak Utama",
+        alt: "Jazz GK5 - Tampak Utama",
       },
       {
         src: "/images/Honda/Jazz GK5/IMG-20250908-WA0047.jpg",
@@ -152,8 +176,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/CR-V Turbo.png",
+        alt: "CR-V Turbo - Red Valet Coil Red - Thumbnail",
+      },
+      {
         src: "/images/Honda/CR-V Turbo/Foto dari Iyan.jpg",
-        alt: "CR-V Turbo - Red Valet Coil Red - Tampak Utama",
+        alt: "CR-V Turbo - Tampak Utama",
       },
       {
         src: "/images/Honda/CR-V Turbo/Foto dari Iyan(4).jpg",
@@ -175,8 +203,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/BR-V 2022.png",
+        alt: "BR-V 2022 - Black Marble Coil Black - Thumbnail",
+      },
+      {
         src: "/images/Honda/BR-V 2022/IMG-20250829-WA0010.jpg",
-        alt: "BR-V 2022 - Black Marble Coil Black - Tampak Utama",
+        alt: "BR-V 2022 - Tampak Utama",
       },
       {
         src: "/images/Honda/BR-V 2022/IMG-20250829-WA0015.jpg",
@@ -198,8 +230,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Xpander 2017-Now.png",
+        alt: "Xpander 2017-Now - Black Marble Coil Black - Thumbnail",
+      },
+      {
         src: "/images/Mitsubihshi/Xpander 2017-Now/IMG-20250902-WA0041.jpg",
-        alt: "Xpander 2017-Now - Black Marble Coil Black - Tampak Utama",
+        alt: "Xpander 2017-Now - Tampak Utama",
       },
       {
         src: "/images/Mitsubihshi/Xpander 2017-Now/IMG-20250902-WA0042.jpg",
@@ -221,8 +257,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Destinator 2025.png",
+        alt: "Destinator 2025 - Milk Tea Coil Beige - Thumbnail",
+      },
+      {
         src: "/images/Mitsubihshi/Destinator 2025/IMG-20250902-WA0027.jpg",
-        alt: "Destinator 2025 - Milk Tea Coil Beige - Tampak Utama",
+        alt: "Destinator 2025 - Tampak Utama",
       },
       {
         src: "/images/Mitsubihshi/Destinator 2025/IMG-20250902-WA0029.jpg",
@@ -244,8 +284,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Luxio 2010.png",
+        alt: "Luxio 2010 - Black Marble Coil Black - Thumbnail",
+      },
+      {
         src: "/images/Daihatsu/Luxio/Foto dari Iyan.jpg",
-        alt: "Luxio 2010 - Black Marble Coil Black - Tampak Utama",
+        alt: "Luxio 2010 - Tampak Utama",
       },
       {
         src: "/images/Daihatsu/Luxio/Foto dari Iyan(2).jpg",
@@ -267,8 +311,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Xenia.png",
+        alt: "Xenia - Black Marble Coil Black - Thumbnail",
+      },
+      {
         src: "/images/Daihatsu/Xenia/IMG-20250904-WA0019.jpg",
-        alt: "Xenia - Black Marble Coil Black - Tampak Utama",
+        alt: "Xenia - Tampak Utama",
       },
       {
         src: "/images/Daihatsu/Xenia/IMG-20250904-WA0021.jpg",
@@ -290,8 +338,12 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
+        src: "/images/Thumbnail/Terios.png",
+        alt: "Terios - Black Fire Coil Black - Thumbnail",
+      },
+      {
         src: "/images/Daihatsu/Terios/Foto dari Iyan(1).jpg",
-        alt: "Terios - Black Fire Coil Black - Tampak Utama",
+        alt: "Terios - Tampak Utama",
       },
       {
         src: "/images/Daihatsu/Terios/Foto dari Iyan(3).jpg",
