@@ -19,7 +19,7 @@ export default function LocationCard() {
           {/* Image */}
           <div className="relative aspect-[3/4] rounded-3xl overflow-hidden">
             <Image
-              src="/placeholders/placeholder.svg"
+              src="/static/lokasi.png"
               alt="Lokasi Promate Tangerang - Padina Soho"
               fill
               className="object-cover"
@@ -55,7 +55,7 @@ export default function LocationCard() {
           {/* Image */}
           <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-card">
             <Image
-              src="/placeholders/placeholder.svg"
+              src="/static/lokasi.png"
               alt="Lokasi Promate Tangerang - Padina Soho"
               fill
               className="object-cover"

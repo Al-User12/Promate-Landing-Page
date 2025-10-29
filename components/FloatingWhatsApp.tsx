@@ -1,7 +1,7 @@
 export default function FloatingWhatsApp() {
   return (
     <a
-      href="https://wa.me/6281234567890"
+      href="https://wa.me/6282125189508?text=Halo%20Promate%2C%20saya%20mau%20tanya%20tentang%20karpet%20mobil%20saya"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-brand-wa hover:bg-green-600 text-white p-4 rounded-full shadow-card transition-all hover:scale-110"

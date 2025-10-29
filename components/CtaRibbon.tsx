@@ -9,7 +9,7 @@ export default function CtaRibbon() {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0">
             <Image
-              src="/placeholders/placeholder.svg"
+              src="/static/cta-ribbon.png"
               alt="Background"
               fill
               className="object-cover"
@@ -33,7 +33,7 @@ export default function CtaRibbon() {
 
               {/* Button */}
               <a
-                href="https://wa.me/6281234567890?text=Halo%20Promate%2C%20saya%20mau%20Free%20Home%20Service"
+                href="https://wa.me/6282125189508?text=Halo%20Promate%2C%20saya%20mau%20tanya%20tentang%20karpet%20mobil%20saya"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-black font-semibold px-8 py-3.5 rounded-lg hover:bg-gray-200 transition-colors"
