@@ -38,7 +38,7 @@ export default function Hero() {
               Tangerang
             </h1>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Promate tampilkan kabin kecil lebih interior mobilmu sesetan rapi dan elegan.
+            Presisi sampai sudut kecil, biar interior mobilmu keliatan makin rapi dan elegan.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export default function Hero() {
                 Tangerang
               </h1>
               <p className="text-lg text-gray-400 leading-relaxed max-w-lg">
-                Promate tampilkan kabin kecil lebih interior mobilmu sesetan rapi dan elegan.
+              Presisi sampai sudut kecil, biar interior mobilmu keliatan makin rapi dan elegan.
               </p>
             </div>
 

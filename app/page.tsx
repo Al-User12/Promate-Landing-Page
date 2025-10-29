@@ -122,10 +122,10 @@ export default function Home() {
               className="text-2xl lg:text-4xl"
               style={{ fontFamily: "'Clash Display', sans-serif" }}
             >
-              Katalog Promate
+              Gak Perlu Bingung
             </h2>
             <p className="text-sm lg:text-base text-gray-400">
-              Karpet mobil premium untuk berbagai merek
+            Geser aja, liat contoh karpet Promate di berbagai tipe mobil biar makin yakin sebelum pasang.
             </p>
           </div>
 
