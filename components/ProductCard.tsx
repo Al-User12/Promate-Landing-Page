@@ -20,7 +20,6 @@ export default function ProductCard({ slug, model, variant, image }: ProductCard
           alt={`${model} - ${variant}`}
           fill
           className="object-cover"
-          unoptimized
         />
       </div>
       <div className="space-y-1">

@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import BrandSection from "@/components/BrandSection";
-import CtaRibbon from "@/components/CtaRibbon";
 import LocationCard from "@/components/LocationCard";
+import CtaRibbon from "@/components/CtaRibbon";
 
 const brandsData = [
   {
@@ -9,58 +9,16 @@ const brandsData = [
     brandLogo: "/placeholders/placeholder-logo.svg",
     products: [
       {
-        slug: "land-cruiser-300-gr-sport",
-        model: "Land Cruiser 300 GR Sport",
-        variant: "Black Marble + Coil Black",
-        image: "/placeholders/placeholder.svg",
+        slug: "vellfire-hybrid",
+        model: "Vellfire Hybrid",
+        variant: "Premium Carpet",
+        image: "/images/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.40 (2).jpeg",
       },
       {
-        slug: "alphard-2023",
-        model: "Alphard 2023",
-        variant: "Black Leather + Coil Black",
-        image: "/placeholders/placeholder.svg",
-      },
-      {
-        slug: "toyota-black-fire",
-        model: "Toyota",
-        variant: "Black Fire + Coil Black",
-        image: "/placeholders/placeholder.svg",
-      },
-      {
-        slug: "toyota-maroon",
-        model: "Toyota",
-        variant: "Maroon + Coil Maroon",
-        image: "/placeholders/placeholder.svg",
-      },
-      {
-        slug: "toyota-coffee",
-        model: "Toyota",
-        variant: "Coffee + Coil Coffee",
-        image: "/placeholders/placeholder.svg",
-      },
-    ],
-  },
-  {
-    brandName: "Mitsubishi",
-    brandLogo: "/placeholders/placeholder-logo.svg",
-    products: [
-      {
-        slug: "xpander-2023",
-        model: "Xpander 2023",
-        variant: "Black Marble + Coil Black",
-        image: "/placeholders/placeholder.svg",
-      },
-      {
-        slug: "pajero-sport-2022",
-        model: "Pajero Sport 2022",
-        variant: "Black Leather + Coil Orange",
-        image: "/placeholders/placeholder.svg",
-      },
-      {
-        slug: "mitsubishi-milk-tea",
-        model: "Mitsubishi",
-        variant: "Milk Tea + Coil Beige",
-        image: "/placeholders/placeholder.svg",
+        slug: "innova-2005-2015",
+        model: "Innova 2005 - 2015",
+        variant: "Custom Carpet",
+        image: "/images/Innova 2005 - 2015/Foto dari Iyan(2).jpg",
       },
     ],
   },
@@ -69,34 +27,40 @@ const brandsData = [
     brandLogo: "/placeholders/placeholder-logo.svg",
     products: [
       {
-        slug: "br-v-2023",
-        model: "BR-V 2023",
-        variant: "Black Marble + Coil Black",
-        image: "/placeholders/placeholder.svg",
+        slug: "br-v-2022",
+        model: "BR-V 2022",
+        variant: "Premium Carpet",
+        image: "/images/BR-V 2022/IMG-20250829-WA0010.jpg",
       },
       {
-        slug: "crv-2022",
-        model: "CR-V 2022",
-        variant: "Custom + Coil Black",
-        image: "/placeholders/placeholder.svg",
+        slug: "cr-v-turbo",
+        model: "CR-V Turbo",
+        variant: "Custom Carpet",
+        image: "/images/CR-V Turbo/Foto dari Iyan.jpg",
       },
       {
-        slug: "honda-carbon",
-        model: "Honda",
-        variant: "Carbon + Coil Black",
-        image: "/placeholders/placeholder.svg",
+        slug: "freed-2014",
+        model: "Freed 2014",
+        variant: "Premium Carpet",
+        image: "/images/Freed 2014/Foto dari Iyan(1).jpg",
       },
       {
-        slug: "honda-maroon",
-        model: "Honda",
-        variant: "Maroon",
-        image: "/placeholders/placeholder.svg",
+        slug: "jazz-gk5",
+        model: "Jazz GK5",
+        variant: "Custom Carpet",
+        image: "/images/Jazz GK5/IMG-20250908-WA0043.jpg",
       },
+    ],
+  },
+  {
+    brandName: "Mitsubishi",
+    brandLogo: "/placeholders/placeholder-logo.svg",
+    products: [
       {
-        slug: "honda-red-valet",
-        model: "Honda",
-        variant: "Red Valet + Coil Red",
-        image: "/placeholders/placeholder.svg",
+        slug: "xpander-2017-now",
+        model: "Xpander 2017-Now",
+        variant: "Premium Carpet",
+        image: "/images/Xpander 2017-Now/IMG-20250902-WA0041.jpg",
       },
     ],
   },
@@ -105,16 +69,28 @@ const brandsData = [
     brandLogo: "/placeholders/placeholder-logo.svg",
     products: [
       {
-        slug: "daihatsu-black-marble",
-        model: "Daihatsu",
-        variant: "Black Marble + Coil Black",
-        image: "/placeholders/placeholder.svg",
+        slug: "agya",
+        model: "Agya",
+        variant: "Custom Carpet",
+        image: "/images/Agya/048acc9d-e987-48d0-9f81-bccf69297411.jpg",
       },
       {
-        slug: "daihatsu-black-fire",
-        model: "Daihatsu",
-        variant: "Black Fire + Coil Black",
-        image: "/placeholders/placeholder.svg",
+        slug: "terios",
+        model: "Terios",
+        variant: "Premium Carpet",
+        image: "/images/Terios/Foto dari Iyan(1).jpg",
+      },
+      {
+        slug: "xenia",
+        model: "Xenia",
+        variant: "Custom Carpet",
+        image: "/images/Xenia/IMG-20250904-WA0019.jpg",
+      },
+      {
+        slug: "luxio",
+        model: "Luxio",
+        variant: "Premium Carpet",
+        image: "/images/Luxio/Foto dari Iyan.jpg",
       },
     ],
   },
@@ -123,16 +99,10 @@ const brandsData = [
     brandLogo: "/placeholders/placeholder-logo.svg",
     products: [
       {
-        slug: "almaz",
-        model: "Almaz",
-        variant: "Black Marble + Coil Black",
-        image: "/placeholders/placeholder.svg",
-      },
-      {
-        slug: "cortez-2022",
-        model: "Cortez 2022",
-        variant: "Custom + Coil Black",
-        image: "/placeholders/placeholder.svg",
+        slug: "destinator-2025",
+        model: "Destinator 2025",
+        variant: "Premium Carpet",
+        image: "/images/Destinator 2025/IMG-20250902-WA0027.jpg",
       },
     ],
   },
@@ -143,19 +113,22 @@ export default function Home() {
     <>
       <main>
         <Hero />
-        
-        {/* Product Showcase Section */}
-        <section className="py-12 md:py-16 lg:py-20">
-          <div className="px-4 lg:px-6 xl:px-8 mb-8 lg:mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl mb-3" style={{ fontFamily: "'Clash Display', sans-serif" }}>
-              Gak Perlu Bingung
+
+        {/* Product Showcase */}
+        <section className="px-4 lg:px-6 py-12 lg:py-16 space-y-12 lg:space-y-16">
+          <div className="text-center space-y-2 lg:space-y-3">
+            <h2
+              className="text-2xl lg:text-4xl"
+              style={{ fontFamily: "'Clash Display', sans-serif" }}
+            >
+              Katalog Promate
             </h2>
-            <p className="text-sm md:text-base lg:text-lg text-gray-400 leading-relaxed max-w-2xl">
-              Geser aja, liat contoh karpet Promate di berbagai tipe mobil biar makin yakin sebelum pasang.
+            <p className="text-sm lg:text-base text-gray-400">
+              Karpet mobil premium untuk berbagai merek
             </p>
           </div>
-            
-          <div className="space-y-8 lg:space-y-12">
+
+          <div className="space-y-12 lg:space-y-16">
             {brandsData.map((brand, index) => (
               <BrandSection
                 key={index}
@@ -186,4 +159,3 @@ export default function Home() {
     </>
   );
 }
-

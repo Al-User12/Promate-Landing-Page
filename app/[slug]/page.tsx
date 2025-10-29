@@ -1,195 +1,283 @@
 import { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import Gallery from "@/components/Gallery";
 import CtaRibbon from "@/components/CtaRibbon";
 
-// Product data with single image per product
+// Product data with multiple images per product
 const productData: Record<string, any> = {
-  "land-cruiser-300-gr-sport": {
-    title: "Land Cruiser 300 GR Sport",
-    variant: "Black Marble • Coil Black",
-    brand: "Toyota",
-    image: "/placeholders/placeholder.svg",
+  "vellfire-hybrid": {
+    title: "Vellfire Hybrid",
+    variant: "Premium Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Land Cruiser 300 GR Sport dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Vellfire Hybrid dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.40 (2).jpeg",
+        alt: "Vellfire Hybrid - Premium Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.40.jpeg",
+        alt: "Vellfire Hybrid - Detail Jahitan",
+      },
+      {
+        src: "/images/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.41 (2).jpeg",
+        alt: "Vellfire Hybrid - Tampak Samping",
+      },
+    ],
   },
-  "alphard-2023": {
-    title: "Alphard 2023",
-    variant: "Black Leather • Coil Black",
-    brand: "Toyota",
-    image: "/placeholders/placeholder.svg",
+  "innova-2005-2015": {
+    title: "Innova 2005 - 2015",
+    variant: "Custom Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Alphard 2023 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Innova 2005 - 2015 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/Innova 2005 - 2015/Foto dari Iyan(2).jpg",
+        alt: "Innova 2005 - 2015 - Custom Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Innova 2005 - 2015/Foto dari Iyan(4).jpg",
+        alt: "Innova 2005 - 2015 - Detail Jahitan",
+      },
+      {
+        src: "/images/Innova 2005 - 2015/Foto dari Iyan(6).jpg",
+        alt: "Innova 2005 - 2015 - Tampak Samping",
+      },
+    ],
   },
-  "toyota-black-fire": {
-    title: "Toyota",
-    variant: "Black Fire • Coil Black",
-    brand: "Toyota",
-    image: "/placeholders/placeholder.svg",
+  "br-v-2022": {
+    title: "BR-V 2022",
+    variant: "Premium Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Toyota dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus BR-V 2022 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/BR-V 2022/IMG-20250829-WA0010.jpg",
+        alt: "BR-V 2022 - Premium Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/BR-V 2022/IMG-20250829-WA0015.jpg",
+        alt: "BR-V 2022 - Detail Jahitan",
+      },
+      {
+        src: "/images/BR-V 2022/IMG-20250829-WA0016.jpg",
+        alt: "BR-V 2022 - Tampak Samping",
+      },
+    ],
   },
-  "toyota-maroon": {
-    title: "Toyota",
-    variant: "Maroon • Coil Maroon",
-    brand: "Toyota",
-    image: "/placeholders/placeholder.svg",
+  "cr-v-turbo": {
+    title: "CR-V Turbo",
+    variant: "Custom Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Toyota dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus CR-V Turbo dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/CR-V Turbo/Foto dari Iyan.jpg",
+        alt: "CR-V Turbo - Custom Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/CR-V Turbo/Foto dari Iyan(4).jpg",
+        alt: "CR-V Turbo - Detail Jahitan",
+      },
+      {
+        src: "/images/CR-V Turbo/Foto dari Iyan(5).jpg",
+        alt: "CR-V Turbo - Tampak Samping",
+      },
+    ],
   },
-  "toyota-coffee": {
-    title: "Toyota",
-    variant: "Coffee • Coil Coffee",
-    brand: "Toyota",
-    image: "/placeholders/placeholder.svg",
+  "freed-2014": {
+    title: "Freed 2014",
+    variant: "Premium Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Toyota dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Freed 2014 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/Freed 2014/Foto dari Iyan(1).jpg",
+        alt: "Freed 2014 - Premium Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Freed 2014/Foto dari Iyan(10).jpg",
+        alt: "Freed 2014 - Detail Jahitan",
+      },
+      {
+        src: "/images/Freed 2014/Foto dari Iyan(7).jpg",
+        alt: "Freed 2014 - Tampak Samping",
+      },
+    ],
   },
-  "xpander-2023": {
-    title: "Xpander 2023",
-    variant: "Black Marble • Coil Black",
-    brand: "Mitsubishi",
-    image: "/placeholders/placeholder.svg",
+  "jazz-gk5": {
+    title: "Jazz GK5",
+    variant: "Custom Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Xpander 2023 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Jazz GK5 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/Jazz GK5/IMG-20250908-WA0043.jpg",
+        alt: "Jazz GK5 - Custom Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Jazz GK5/IMG-20250908-WA0047.jpg",
+        alt: "Jazz GK5 - Detail Jahitan",
+      },
+      {
+        src: "/images/Jazz GK5/_storage_emulated_0_Android_media_com.whatsapp.w4b_WhatsApp Business_Media_WhatsApp Business Images_IMG-20250908-WA0048.jpg",
+        alt: "Jazz GK5 - Tampak Samping",
+      },
+    ],
   },
-  "pajero-sport-2022": {
-    title: "Pajero Sport 2022",
-    variant: "Black Leather • Coil Orange",
-    brand: "Mitsubishi",
-    image: "/placeholders/placeholder.svg",
+  "xpander-2017-now": {
+    title: "Xpander 2017-Now",
+    variant: "Premium Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Pajero Sport 2022 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Xpander 2017-Now dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/Xpander 2017-Now/IMG-20250902-WA0041.jpg",
+        alt: "Xpander 2017-Now - Premium Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Xpander 2017-Now/IMG-20250902-WA0042.jpg",
+        alt: "Xpander 2017-Now - Detail Jahitan",
+      },
+      {
+        src: "/images/Xpander 2017-Now/IMG-20250902-WA0045.jpg",
+        alt: "Xpander 2017-Now - Tampak Samping",
+      },
+    ],
   },
-  "mitsubishi-milk-tea": {
-    title: "Mitsubishi",
-    variant: "Milk Tea • Coil Beige",
-    brand: "Mitsubishi",
-    image: "/placeholders/placeholder.svg",
+  "agya": {
+    title: "Agya",
+    variant: "Custom Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Mitsubishi dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Agya dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/Agya/048acc9d-e987-48d0-9f81-bccf69297411.jpg",
+        alt: "Agya - Custom Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Agya/11aa4dec-25c3-4871-ab3c-6112b00e51b7.jpg",
+        alt: "Agya - Detail Jahitan",
+      },
+      {
+        src: "/images/Agya/9b5aa12b-8f8b-41e2-b7fd-695f701ce0e2.jpg",
+        alt: "Agya - Tampak Samping",
+      },
+    ],
   },
-  "br-v-2023": {
-    title: "BR-V 2023",
-    variant: "Black Marble • Coil Black",
-    brand: "Honda",
-    image: "/placeholders/placeholder.svg",
+  "terios": {
+    title: "Terios",
+    variant: "Premium Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus BR-V 2023 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Terios dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/Terios/Foto dari Iyan(1).jpg",
+        alt: "Terios - Premium Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Terios/Foto dari Iyan(3).jpg",
+        alt: "Terios - Detail Jahitan",
+      },
+      {
+        src: "/images/Terios/Foto dari Iyan(4).jpg",
+        alt: "Terios - Tampak Samping",
+      },
+    ],
   },
-  "crv-2022": {
-    title: "CR-V 2022",
-    variant: "Custom • Coil Black",
-    brand: "Honda",
-    image: "/placeholders/placeholder.svg",
+  "xenia": {
+    title: "Xenia",
+    variant: "Custom Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus CR-V 2022 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Xenia dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/Xenia/IMG-20250904-WA0019.jpg",
+        alt: "Xenia - Custom Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Xenia/IMG-20250904-WA0021.jpg",
+        alt: "Xenia - Detail Jahitan",
+      },
+      {
+        src: "/images/Xenia/IMG-20250904-WA0022.jpg",
+        alt: "Xenia - Tampak Samping",
+      },
+    ],
   },
-  "honda-carbon": {
-    title: "Honda",
-    variant: "Carbon • Coil Black",
-    brand: "Honda",
-    image: "/placeholders/placeholder.svg",
+  "luxio": {
+    title: "Luxio",
+    variant: "Premium Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Honda dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Luxio dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
+    images: [
+      {
+        src: "/images/Luxio/Foto dari Iyan.jpg",
+        alt: "Luxio - Premium Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Luxio/Foto dari Iyan(2).jpg",
+        alt: "Luxio - Detail Jahitan",
+      },
+      {
+        src: "/images/Luxio/Foto dari Iyan(5).jpg",
+        alt: "Luxio - Tampak Samping",
+      },
+    ],
   },
-  "honda-maroon": {
-    title: "Honda",
-    variant: "Maroon",
-    brand: "Honda",
-    image: "/placeholders/placeholder.svg",
+  "destinator-2025": {
+    title: "Destinator 2025",
+    variant: "Premium Carpet",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Honda dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Destinator 2025 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
-  },
-  "honda-red-valet": {
-    title: "Honda",
-    variant: "Red Valet • Coil Red",
-    brand: "Honda",
-    image: "/placeholders/placeholder.svg",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Honda dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
-    ],
-  },
-  "daihatsu-black-marble": {
-    title: "Daihatsu",
-    variant: "Black Marble • Coil Black",
-    brand: "Daihatsu",
-    image: "/placeholders/placeholder.svg",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Daihatsu dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
-    ],
-  },
-  "daihatsu-black-fire": {
-    title: "Daihatsu",
-    variant: "Black Fire • Coil Black",
-    brand: "Daihatsu",
-    image: "/placeholders/placeholder.svg",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Daihatsu dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
-    ],
-  },
-  "almaz": {
-    title: "Almaz",
-    variant: "Black Marble • Coil Black",
-    brand: "Wuling",
-    image: "/placeholders/placeholder.svg",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Almaz dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
-    ],
-  },
-  "cortez-2022": {
-    title: "Cortez 2022",
-    variant: "Custom • Coil Black",
-    brand: "Wuling",
-    image: "/placeholders/placeholder.svg",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Cortez 2022 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
+    images: [
+      {
+        src: "/images/Destinator 2025/IMG-20250902-WA0027.jpg",
+        alt: "Destinator 2025 - Premium Carpet - Tampak Utama",
+      },
+      {
+        src: "/images/Destinator 2025/IMG-20250902-WA0029.jpg",
+        alt: "Destinator 2025 - Detail Jahitan",
+      },
+      {
+        src: "/images/Destinator 2025/IMG-20250902-WA0030.jpg",
+        alt: "Destinator 2025 - Tampak Samping",
+      },
     ],
   },
 };
@@ -242,17 +330,6 @@ export default function ProductPage({ params }: ProductPageProps) {
     );
   }
 
-  // Get other products from the same brand
-  const relatedProducts = Object.entries(productData)
-    .filter(([slug, p]) => p.brand === product.brand && slug !== params.slug)
-    .slice(0, 3)
-    .map(([slug, p]) => ({
-      slug,
-      title: p.title,
-      variant: p.variant,
-      image: p.image,
-    }));
-
   return (
     <>
       <main className="min-h-screen">
@@ -280,38 +357,8 @@ export default function ProductPage({ params }: ProductPageProps) {
 
         {/* Mobile Layout */}
         <div className="lg:hidden px-4 pb-12 space-y-6">
-          {/* Main Image */}
-          <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-brand-surface">
-            <Image
-              src={product.image}
-              alt={`${product.title} - ${product.variant}`}
-              fill
-              className="object-cover"
-              priority
-              unoptimized
-            />
-          </div>
-
-          {/* Related Products Gallery */}
-          {relatedProducts.length > 0 && (
-            <div className="grid grid-cols-4 gap-2">
-              {relatedProducts.map((related) => (
-                <Link
-                  key={related.slug}
-                  href={`/${related.slug}`}
-                  className="relative aspect-square rounded-lg overflow-hidden border-2 border-brand-line hover:border-brand-red transition-colors"
-                >
-                  <Image
-                    src={related.image}
-                    alt={`${related.title} - ${related.variant}`}
-                    fill
-                    className="object-cover"
-                    unoptimized
-                  />
-                </Link>
-              ))}
-            </div>
-          )}
+          {/* Gallery */}
+          <Gallery images={product.images} />
 
           {/* Title & Variant */}
           <div className="space-y-2">
@@ -332,39 +379,9 @@ export default function ProductPage({ params }: ProductPageProps) {
         {/* Desktop Layout */}
         <div className="hidden lg:block px-6 xl:px-8 pb-16">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
-            {/* Gallery */}
-            <div className="sticky top-8 space-y-4">
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-brand-surface">
-                <Image
-                  src={product.image}
-                  alt={`${product.title} - ${product.variant}`}
-                  fill
-                  className="object-cover"
-                  priority
-                  unoptimized
-                />
-              </div>
-
-              {/* Related Products Gallery */}
-              {relatedProducts.length > 0 && (
-                <div className="grid grid-cols-4 gap-2">
-                  {relatedProducts.map((related) => (
-                    <Link
-                      key={related.slug}
-                      href={`/${related.slug}`}
-                      className="relative aspect-square rounded-lg overflow-hidden border-2 border-brand-line hover:border-brand-red transition-colors"
-                    >
-                      <Image
-                        src={related.image}
-                        alt={`${related.title} - ${related.variant}`}
-                        fill
-                        className="object-cover"
-                        unoptimized
-                      />
-                    </Link>
-                  ))}
-                </div>
-              )}
+            {/* Gallery - Sticky */}
+            <div className="sticky top-8">
+              <Gallery images={product.images} />
             </div>
 
             {/* Content */}

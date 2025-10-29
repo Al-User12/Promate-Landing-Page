@@ -17,14 +17,13 @@ export default function Gallery({ images }: GalleryProps) {
 
   return (
     <div className="space-y-4">
-      <div className="relative aspect-[16/9] rounded-card overflow-hidden bg-brand-surface">
+      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-brand-surface">
         <Image
           src={images[selectedIndex].src}
           alt={images[selectedIndex].alt}
           fill
           className="object-cover"
           priority
-          unoptimized
         />
       </div>
       <div className="grid grid-cols-4 gap-2">
@@ -43,7 +42,6 @@ export default function Gallery({ images }: GalleryProps) {
               alt={image.alt}
               fill
               className="object-cover"
-              unoptimized
             />
           </button>
         ))}
