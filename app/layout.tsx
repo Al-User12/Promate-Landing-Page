@@ -4,7 +4,11 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// Update this with your production URL when deploying
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://promate-landing-page.vercel.app/';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Promate - Custom Karpet Mobil Premium Tangerang",
   description: "Upgrade tampilan kabin mobil Anda dengan karpet premium khusus dari Promate. Material 7D premium, waterproof, anti slip. Free Home Service di Jabodetabek.",
   openGraph: {
@@ -12,6 +16,8 @@ export const metadata: Metadata = {
     description: "Custom karpet mobil premium untuk berbagai merek. Material 7D waterproof dengan teknologi terbaru.",
     type: "website",
     locale: "id_ID",
+    url: "/",
+    siteName: "Promate",
     images: [
       {
         url: "/static/Hero.png",

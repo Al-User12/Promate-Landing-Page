@@ -47,6 +47,17 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see your site!
 
+### Step 4: Setup Environment Variables (Optional)
+
+Untuk production deployment, buat file `.env.local`:
+
+```bash
+# .env.local
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+```
+
+Untuk development, tidak perlu file ini (default: `http://localhost:3000`)
+
 ## 📱 Update Contact Information
 
 Replace the placeholder WhatsApp number throughout the project:
@@ -166,6 +177,16 @@ Before going live, make sure you've:
 - Run `npm install` again
 - Delete `.next` folder and rebuild
 - Check for TypeScript errors in terminal
+
+**Meta images not showing when sharing?**
+- Create `.env.local` file with `NEXT_PUBLIC_SITE_URL=http://localhost:3000`
+- For production: Update with your actual domain (e.g., `https://yourdomain.com`)
+- Restart development server after creating .env.local
+- Test with these tools:
+  - Facebook Sharing Debugger: https://developers.facebook.com/tools/debug/
+  - Twitter Card Validator: https://cards-dev.twitter.com/validator
+  - LinkedIn Post Inspector: https://www.linkedin.com/post-inspector/
+- Note: Social media platforms cache meta data - use debugger tools to refresh cache
 
 **Need help?**
 - Check the main README.md for detailed documentation
