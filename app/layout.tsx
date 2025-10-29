@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 // Update this with your production URL when deploying
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://promate-landing-page.vercel.app/';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://promatesupplier.id/';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
