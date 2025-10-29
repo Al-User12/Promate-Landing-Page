@@ -74,15 +74,15 @@ const productData: Record<string, any> = {
         alt: "Innova 2005 - 2015 - Maroon Coil Maroon - Thumbnail",
       },
       {
-        src: "/images/Toyota/Innova 2005 - 2015/Foto dari Iyan(2).jpg",
+        src: "/images/Toyota/Innova 2005 - 2015/2.jpg",
         alt: "Innova 2005 - 2015 - Tampak Utama",
       },
       {
-        src: "/images/Toyota/Innova 2005 - 2015/Foto dari Iyan(4).jpg",
+        src: "/images/Toyota/Innova 2005 - 2015/3.jpg",
         alt: "Innova 2005 - 2015 - Detail Jahitan",
       },
       {
-        src: "/images/Toyota/Innova 2005 - 2015/Foto dari Iyan(6).jpg",
+        src: "/images/Toyota/Innova 2005 - 2015/4.jpg",
         alt: "Innova 2005 - 2015 - Tampak Samping",
       },
     ],
@@ -128,15 +128,15 @@ const productData: Record<string, any> = {
         alt: "Freed 2014 - Carbon Coil Black - Thumbnail",
       },
       {
-        src: "/images/Honda/Freed 2014/Foto dari Iyan(1).jpg",
+        src: "/images/Honda/Freed 2014/49.jpg",
         alt: "Freed 2014 - Tampak Utama",
       },
       {
-        src: "/images/Honda/Freed 2014/Foto dari Iyan(10).jpg",
+        src: "/images/Honda/Freed 2014/50.jpg",
         alt: "Freed 2014 - Detail Jahitan",
       },
       {
-        src: "/images/Honda/Freed 2014/Foto dari Iyan(7).jpg",
+        src: "/images/Honda/Freed 2014/51.jpg",
         alt: "Freed 2014 - Tampak Samping",
       },
     ],
@@ -155,15 +155,15 @@ const productData: Record<string, any> = {
         alt: "Jazz GK5 - Maroon - Thumbnail",
       },
       {
-        src: "/images/Honda/Jazz GK5/IMG-20250908-WA0043.jpg",
+        src: "/images/Honda/Jazz GK5/52.jpg",
         alt: "Jazz GK5 - Tampak Utama",
       },
       {
-        src: "/images/Honda/Jazz GK5/IMG-20250908-WA0047.jpg",
+        src: "/images/Honda/Jazz GK5/53.jpg",
         alt: "Jazz GK5 - Detail Jahitan",
       },
       {
-        src: "/images/Honda/Jazz GK5/_storage_emulated_0_Android_media_com.whatsapp.w4b_WhatsApp Business_Media_WhatsApp Business Images_IMG-20250908-WA0048.jpg",
+        src: "/images/Honda/Jazz GK5/54.jpg",
         alt: "Jazz GK5 - Tampak Samping",
       },
     ],
@@ -182,15 +182,15 @@ const productData: Record<string, any> = {
         alt: "CR-V Turbo - Red Valet Coil Red - Thumbnail",
       },
       {
-        src: "/images/Honda/CR-V Turbo/Foto dari Iyan.jpg",
+        src: "/images/Honda/CR-V Turbo/55.jpg",
         alt: "CR-V Turbo - Tampak Utama",
       },
       {
-        src: "/images/Honda/CR-V Turbo/Foto dari Iyan(4).jpg",
+        src: "/images/Honda/CR-V Turbo/56.jpg",
         alt: "CR-V Turbo - Detail Jahitan",
       },
       {
-        src: "/images/Honda/CR-V Turbo/Foto dari Iyan(5).jpg",
+        src: "/images/Honda/CR-V Turbo/57.jpg",
         alt: "CR-V Turbo - Tampak Samping",
       },
     ],
@@ -209,15 +209,15 @@ const productData: Record<string, any> = {
         alt: "BR-V 2022 - Black Marble Coil Black - Thumbnail",
       },
       {
-        src: "/images/Honda/BR-V 2022/IMG-20250829-WA0010.jpg",
+        src: "/images/Honda/BR-V 2022/58.jpg",
         alt: "BR-V 2022 - Tampak Utama",
       },
       {
-        src: "/images/Honda/BR-V 2022/IMG-20250829-WA0015.jpg",
+        src: "/images/Honda/BR-V 2022/59.jpg",
         alt: "BR-V 2022 - Detail Jahitan",
       },
       {
-        src: "/images/Honda/BR-V 2022/IMG-20250829-WA0016.jpg",
+        src: "/images/Honda/BR-V 2022/60.jpg",
         alt: "BR-V 2022 - Tampak Samping",
       },
     ],
@@ -236,15 +236,15 @@ const productData: Record<string, any> = {
         alt: "Xpander 2017-Now - Black Marble Coil Black - Thumbnail",
       },
       {
-        src: "/images/Mitsubihshi/Xpander 2017-Now/IMG-20250902-WA0041.jpg",
+        src: "/images/Mitsubihshi/Xpander 2017-Now/61.jpg",
         alt: "Xpander 2017-Now - Tampak Utama",
       },
       {
-        src: "/images/Mitsubihshi/Xpander 2017-Now/IMG-20250902-WA0042.jpg",
+        src: "/images/Mitsubihshi/Xpander 2017-Now/62.jpg",
         alt: "Xpander 2017-Now - Detail Jahitan",
       },
       {
-        src: "/images/Mitsubihshi/Xpander 2017-Now/IMG-20250902-WA0045.jpg",
+        src: "/images/Mitsubihshi/Xpander 2017-Now/63.jpg",
         alt: "Xpander 2017-Now - Tampak Samping",
       },
     ],
@@ -263,15 +263,15 @@ const productData: Record<string, any> = {
         alt: "Destinator 2025 - Milk Tea Coil Beige - Thumbnail",
       },
       {
-        src: "/images/Mitsubihshi/Destinator 2025/IMG-20250902-WA0027.jpg",
+        src: "/images/Mitsubihshi/Destinator 2025/64.jpg",
         alt: "Destinator 2025 - Tampak Utama",
       },
       {
-        src: "/images/Mitsubihshi/Destinator 2025/IMG-20250902-WA0029.jpg",
+        src: "/images/Mitsubihshi/Destinator 2025/65.jpg",
         alt: "Destinator 2025 - Detail Jahitan",
       },
       {
-        src: "/images/Mitsubihshi/Destinator 2025/IMG-20250902-WA0030.jpg",
+        src: "/images/Mitsubihshi/Destinator 2025/66.jpg",
         alt: "Destinator 2025 - Tampak Samping",
       },
     ],
@@ -290,15 +290,15 @@ const productData: Record<string, any> = {
         alt: "Luxio 2010 - Black Marble Coil Black - Thumbnail",
       },
       {
-        src: "/images/Daihatsu/Luxio/Foto dari Iyan.jpg",
+        src: "/images/Daihatsu/Luxio/67.jpg",
         alt: "Luxio 2010 - Tampak Utama",
       },
       {
-        src: "/images/Daihatsu/Luxio/Foto dari Iyan(2).jpg",
+        src: "/images/Daihatsu/Luxio/68.jpg",
         alt: "Luxio 2010 - Detail Jahitan",
       },
       {
-        src: "/images/Daihatsu/Luxio/Foto dari Iyan(5).jpg",
+        src: "/images/Daihatsu/Luxio/69.jpg",
         alt: "Luxio 2010 - Tampak Samping",
       },
     ],
@@ -317,15 +317,15 @@ const productData: Record<string, any> = {
         alt: "Xenia - Black Marble Coil Black - Thumbnail",
       },
       {
-        src: "/images/Daihatsu/Xenia/IMG-20250904-WA0019.jpg",
+        src: "/images/Daihatsu/Xenia/70.jpg",
         alt: "Xenia - Tampak Utama",
       },
       {
-        src: "/images/Daihatsu/Xenia/IMG-20250904-WA0021.jpg",
+        src: "/images/Daihatsu/Xenia/71.jpg",
         alt: "Xenia - Detail Jahitan",
       },
       {
-        src: "/images/Daihatsu/Xenia/IMG-20250904-WA0022.jpg",
+        src: "/images/Daihatsu/Xenia/72.jpg",
         alt: "Xenia - Tampak Samping",
       },
     ],
@@ -344,15 +344,15 @@ const productData: Record<string, any> = {
         alt: "Terios - Black Fire Coil Black - Thumbnail",
       },
       {
-        src: "/images/Daihatsu/Terios/Foto dari Iyan(1).jpg",
+        src: "/images/Daihatsu/Terios/73.jpg",
         alt: "Terios - Tampak Utama",
       },
       {
-        src: "/images/Daihatsu/Terios/Foto dari Iyan(3).jpg",
+        src: "/images/Daihatsu/Terios/74.jpg",
         alt: "Terios - Detail Jahitan",
       },
       {
-        src: "/images/Daihatsu/Terios/Foto dari Iyan(4).jpg",
+        src: "/images/Daihatsu/Terios/75.jpg",
         alt: "Terios - Tampak Samping",
       },
     ],
