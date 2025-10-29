@@ -51,15 +51,13 @@ export default function Hero() {
             className="w-full bg-brand-red hover:bg-red-600 text-white font-semibold px-5 py-3.5 rounded-lg transition-colors flex items-center justify-between shadow-lg mb-6"
           >
             <span className="text-sm">Lihat Contoh & Chat Kita</span>
-            <div className="bg-white rounded-full p-2">
-              <Image
-                src="/static/Scroll-Icon.png"
-                alt="Scroll"
-                width={16}
-                height={16}
-                className="w-4 h-4"
-              />
-            </div>
+            <Image
+              src="/static/Scroll-Icon.png"
+              alt="Scroll"
+              width={20}
+              height={20}
+              className="w-5 h-5"
+            />
           </button>
 
           {/* Scroll Indicator */}
@@ -127,15 +125,13 @@ export default function Hero() {
               className="inline-flex items-center justify-between bg-brand-red hover:bg-red-600 text-white font-semibold px-6 py-4 rounded-xl transition-colors shadow-lg max-w-md w-full"
             >
               <span className="text-base">Lihat Contoh & Chat Kita </span>
-              <div className="bg-white rounded-full p-2.5">
-                <Image
-                  src="/static/Scroll-Icon.png"
-                  alt="Scroll"
-                  width={20}
-                  height={20}
-                  className="w-5 h-5"
-                />
-              </div>
+              <Image
+                src="/static/Scroll-Icon.png"
+                alt="Scroll"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+              />
             </button>
 
             {/* Scroll Indicator */}

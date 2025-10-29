@@ -149,15 +149,15 @@ export default function Home() {
           href="https://wa.me/6282125189508?text=Halo%20Promate%2C%20saya%20mau%20tanya%20tentang%20karpet%20mobil%20saya"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 bg-brand-wa hover:bg-green-600 text-white p-4 rounded-full shadow-card transition-all hover:scale-110"
+          className="fixed bottom-6 right-6 z-50 transition-all hover:scale-110"
           aria-label="Chat via WhatsApp"
         >
           <Image
             src="/static/Logo-WA.png"
             alt="WhatsApp"
-            width={28}
-            height={28}
-            className="w-7 h-7"
+            width={56}
+            height={56}
+            className="w-14 h-14"
           />
         </a>
       </main>
