@@ -12,6 +12,20 @@ export const metadata: Metadata = {
     description: "Custom karpet mobil premium untuk berbagai merek. Material 7D waterproof dengan teknologi terbaru.",
     type: "website",
     locale: "id_ID",
+    images: [
+      {
+        url: "/static/Hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Promate - Custom Karpet Mobil Premium",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Promate - Custom Karpet Mobil Premium Tangerang",
+    description: "Custom karpet mobil premium untuk berbagai merek. Material 7D waterproof dengan teknologi terbaru.",
+    images: ["/static/Hero.png"],
   },
 };
 
