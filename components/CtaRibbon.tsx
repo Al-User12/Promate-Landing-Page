@@ -9,7 +9,7 @@ export default function CtaRibbon() {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0">
             <Image
-              src="/static/cta-ribbon.png"
+              src="/static/CTA.png"
               alt="Background"
               fill
               className="object-cover"

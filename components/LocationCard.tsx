@@ -55,7 +55,7 @@ export default function LocationCard() {
           {/* Image */}
           <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-card">
             <Image
-              src="/static/lokasi.png"
+              src="/static/Lokasi.png"
               alt="Lokasi Promate Tangerang - Padina Soho"
               fill
               className="object-cover"
@@ -85,7 +85,7 @@ export default function LocationCard() {
 
             {/* Button */}
             <a
-              href="https://maps.google.com/?q=Padina+Soho+Daan+Mogot"
+              href="https://www.google.com/maps/dir/?api=1&destination=-6.1625159677340084,106.67847479573962"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-black text-white font-semibold px-8 py-4 rounded-xl transition-colors hover:bg-gray-800"
