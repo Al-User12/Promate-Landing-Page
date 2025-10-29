@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,9 +11,15 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ slug, model, variant, image }: ProductCardProps) {
+  const handleClick = () => {
+    // Save scroll position before navigating
+    sessionStorage.setItem('scrollPosition', window.scrollY.toString());
+  };
+
   return (
     <Link 
       href={`/${slug}`}
+      onClick={handleClick}
       className="flex-shrink-0 w-[200px] md:w-[240px] lg:w-full group"
     >
       <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-3 transition-transform duration-300 lg:group-hover:scale-[1.02]">

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Gallery from "@/components/Gallery";
 import CtaRibbon from "@/components/CtaRibbon";
+import BackButton from "@/components/BackButton";
 
 // Product data with multiple images per product
 const productData: Record<string, any> = {
@@ -424,29 +425,9 @@ export default function ProductPage({ params }: ProductPageProps) {
 
   return (
     <>
-      <main className="min-h-screen">
-        {/* Back Button */}
-        <div className="px-4 py-6 lg:px-6">
-          <a
-            href="/"
-            className="inline-flex items-center gap-2 text-white hover:text-gray-300 transition-colors"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </a>
-        </div>
-
+      <BackButton />
+      
+      <main className="min-h-screen pt-20">
         {/* Mobile Layout */}
         <div className="lg:hidden px-4 pb-12 space-y-6">
           {/* Gallery */}
