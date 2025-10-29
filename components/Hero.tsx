@@ -9,7 +9,7 @@ export default function Hero() {
         {/* Hero Image - Full width with bottom rounded corners */}
         <div className="relative w-full aspect-[9/16] max-h-[55vh] rounded-b-[2rem] overflow-hidden">
           <Image
-            src="/placeholders/placeholder.svg"
+            src="/static/Hero.png"
             alt="Custom Karpet Mobil Premium Promate"
             fill
             className="object-cover"
