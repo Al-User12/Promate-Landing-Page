@@ -25,7 +25,6 @@ export default function BrandSection({ brandName, brandLogo, products }: BrandSe
             alt={`${brandName} logo`}
             fill
             className="object-contain object-left"
-            unoptimized
           />
         </div>
       </div>

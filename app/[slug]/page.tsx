@@ -4,9 +4,32 @@ import CtaRibbon from "@/components/CtaRibbon";
 
 // Product data with multiple images per product
 const productData: Record<string, any> = {
+  "land-cruiser-300-gr-sport": {
+    title: "Land Cruiser 300 GR Sport",
+    variant: "Black Marble + Coil Black",
+    description: [
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Land Cruiser 300 GR Sport dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
+      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
+    ],
+    images: [
+      {
+        src: "/images/Toyota/Land Cruiser 300 GR Sport/Foto dari Iyan (7) 1.png",
+        alt: "Land Cruiser 300 GR Sport - Black Marble Coil Black - Tampak Utama",
+      },
+      {
+        src: "/images/Toyota/Land Cruiser 300 GR Sport/Foto dari Iyan (8) 1.png",
+        alt: "Land Cruiser 300 GR Sport - Detail Jahitan",
+      },
+      {
+        src: "/images/Toyota/Land Cruiser 300 GR Sport/Foto dari Iyan (9) 1.png",
+        alt: "Land Cruiser 300 GR Sport - Tampak Samping",
+      },
+    ],
+  },
   "vellfire-hybrid": {
     title: "Vellfire Hybrid",
-    variant: "Premium Carpet",
+    variant: "Black Fire + Coil Black",
     description: [
       "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Vellfire Hybrid dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
@@ -14,22 +37,22 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
-        src: "/images/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.40 (2).jpeg",
-        alt: "Vellfire Hybrid - Premium Carpet - Tampak Utama",
+        src: "/images/Toyota/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.40 (2).jpeg",
+        alt: "Vellfire Hybrid - Black Fire Coil Black - Tampak Utama",
       },
       {
-        src: "/images/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.40.jpeg",
+        src: "/images/Toyota/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.40.jpeg",
         alt: "Vellfire Hybrid - Detail Jahitan",
       },
       {
-        src: "/images/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.41 (2).jpeg",
+        src: "/images/Toyota/Vellfire Hybrid/WhatsApp Image 2024-08-14 at 12.50.41 (2).jpeg",
         alt: "Vellfire Hybrid - Tampak Samping",
       },
     ],
   },
   "innova-2005-2015": {
     title: "Innova 2005 - 2015",
-    variant: "Custom Carpet",
+    variant: "Maroon + Coil Maroon",
     description: [
       "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Innova 2005 - 2015 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
@@ -37,137 +60,22 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
-        src: "/images/Innova 2005 - 2015/Foto dari Iyan(2).jpg",
-        alt: "Innova 2005 - 2015 - Custom Carpet - Tampak Utama",
+        src: "/images/Toyota/Innova 2005 - 2015/Foto dari Iyan(2).jpg",
+        alt: "Innova 2005 - 2015 - Maroon Coil Maroon - Tampak Utama",
       },
       {
-        src: "/images/Innova 2005 - 2015/Foto dari Iyan(4).jpg",
+        src: "/images/Toyota/Innova 2005 - 2015/Foto dari Iyan(4).jpg",
         alt: "Innova 2005 - 2015 - Detail Jahitan",
       },
       {
-        src: "/images/Innova 2005 - 2015/Foto dari Iyan(6).jpg",
+        src: "/images/Toyota/Innova 2005 - 2015/Foto dari Iyan(6).jpg",
         alt: "Innova 2005 - 2015 - Tampak Samping",
-      },
-    ],
-  },
-  "br-v-2022": {
-    title: "BR-V 2022",
-    variant: "Premium Carpet",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus BR-V 2022 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
-    ],
-    images: [
-      {
-        src: "/images/BR-V 2022/IMG-20250829-WA0010.jpg",
-        alt: "BR-V 2022 - Premium Carpet - Tampak Utama",
-      },
-      {
-        src: "/images/BR-V 2022/IMG-20250829-WA0015.jpg",
-        alt: "BR-V 2022 - Detail Jahitan",
-      },
-      {
-        src: "/images/BR-V 2022/IMG-20250829-WA0016.jpg",
-        alt: "BR-V 2022 - Tampak Samping",
-      },
-    ],
-  },
-  "cr-v-turbo": {
-    title: "CR-V Turbo",
-    variant: "Custom Carpet",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus CR-V Turbo dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
-    ],
-    images: [
-      {
-        src: "/images/CR-V Turbo/Foto dari Iyan.jpg",
-        alt: "CR-V Turbo - Custom Carpet - Tampak Utama",
-      },
-      {
-        src: "/images/CR-V Turbo/Foto dari Iyan(4).jpg",
-        alt: "CR-V Turbo - Detail Jahitan",
-      },
-      {
-        src: "/images/CR-V Turbo/Foto dari Iyan(5).jpg",
-        alt: "CR-V Turbo - Tampak Samping",
-      },
-    ],
-  },
-  "freed-2014": {
-    title: "Freed 2014",
-    variant: "Premium Carpet",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Freed 2014 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
-    ],
-    images: [
-      {
-        src: "/images/Freed 2014/Foto dari Iyan(1).jpg",
-        alt: "Freed 2014 - Premium Carpet - Tampak Utama",
-      },
-      {
-        src: "/images/Freed 2014/Foto dari Iyan(10).jpg",
-        alt: "Freed 2014 - Detail Jahitan",
-      },
-      {
-        src: "/images/Freed 2014/Foto dari Iyan(7).jpg",
-        alt: "Freed 2014 - Tampak Samping",
-      },
-    ],
-  },
-  "jazz-gk5": {
-    title: "Jazz GK5",
-    variant: "Custom Carpet",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Jazz GK5 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
-    ],
-    images: [
-      {
-        src: "/images/Jazz GK5/IMG-20250908-WA0043.jpg",
-        alt: "Jazz GK5 - Custom Carpet - Tampak Utama",
-      },
-      {
-        src: "/images/Jazz GK5/IMG-20250908-WA0047.jpg",
-        alt: "Jazz GK5 - Detail Jahitan",
-      },
-      {
-        src: "/images/Jazz GK5/_storage_emulated_0_Android_media_com.whatsapp.w4b_WhatsApp Business_Media_WhatsApp Business Images_IMG-20250908-WA0048.jpg",
-        alt: "Jazz GK5 - Tampak Samping",
-      },
-    ],
-  },
-  "xpander-2017-now": {
-    title: "Xpander 2017-Now",
-    variant: "Premium Carpet",
-    description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Xpander 2017-Now dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
-      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
-      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
-    ],
-    images: [
-      {
-        src: "/images/Xpander 2017-Now/IMG-20250902-WA0041.jpg",
-        alt: "Xpander 2017-Now - Premium Carpet - Tampak Utama",
-      },
-      {
-        src: "/images/Xpander 2017-Now/IMG-20250902-WA0042.jpg",
-        alt: "Xpander 2017-Now - Detail Jahitan",
-      },
-      {
-        src: "/images/Xpander 2017-Now/IMG-20250902-WA0045.jpg",
-        alt: "Xpander 2017-Now - Tampak Samping",
       },
     ],
   },
   "agya": {
     title: "Agya",
-    variant: "Custom Carpet",
+    variant: "Coffee + Coil Coffee",
     description: [
       "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Agya dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
@@ -175,91 +83,137 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
-        src: "/images/Agya/048acc9d-e987-48d0-9f81-bccf69297411.jpg",
-        alt: "Agya - Custom Carpet - Tampak Utama",
+        src: "/images/Toyota/Agya/048acc9d-e987-48d0-9f81-bccf69297411.jpg",
+        alt: "Agya - Coffee Coil Coffee - Tampak Utama",
       },
       {
-        src: "/images/Agya/11aa4dec-25c3-4871-ab3c-6112b00e51b7.jpg",
+        src: "/images/Toyota/Agya/11aa4dec-25c3-4871-ab3c-6112b00e51b7.jpg",
         alt: "Agya - Detail Jahitan",
       },
       {
-        src: "/images/Agya/9b5aa12b-8f8b-41e2-b7fd-695f701ce0e2.jpg",
+        src: "/images/Toyota/Agya/9b5aa12b-8f8b-41e2-b7fd-695f701ce0e2.jpg",
         alt: "Agya - Tampak Samping",
       },
     ],
   },
-  "terios": {
-    title: "Terios",
-    variant: "Premium Carpet",
+  "freed-2014": {
+    title: "Freed 2014",
+    variant: "Carbon + Coil Black",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Terios dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Freed 2014 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
     images: [
       {
-        src: "/images/Terios/Foto dari Iyan(1).jpg",
-        alt: "Terios - Premium Carpet - Tampak Utama",
+        src: "/images/Honda/Freed 2014/Foto dari Iyan(1).jpg",
+        alt: "Freed 2014 - Carbon Coil Black - Tampak Utama",
       },
       {
-        src: "/images/Terios/Foto dari Iyan(3).jpg",
-        alt: "Terios - Detail Jahitan",
+        src: "/images/Honda/Freed 2014/Foto dari Iyan(10).jpg",
+        alt: "Freed 2014 - Detail Jahitan",
       },
       {
-        src: "/images/Terios/Foto dari Iyan(4).jpg",
-        alt: "Terios - Tampak Samping",
+        src: "/images/Honda/Freed 2014/Foto dari Iyan(7).jpg",
+        alt: "Freed 2014 - Tampak Samping",
       },
     ],
   },
-  "xenia": {
-    title: "Xenia",
-    variant: "Custom Carpet",
+  "jazz-gk5": {
+    title: "Jazz GK5",
+    variant: "Maroon",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Xenia dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Jazz GK5 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
     images: [
       {
-        src: "/images/Xenia/IMG-20250904-WA0019.jpg",
-        alt: "Xenia - Custom Carpet - Tampak Utama",
+        src: "/images/Honda/Jazz GK5/IMG-20250908-WA0043.jpg",
+        alt: "Jazz GK5 - Maroon - Tampak Utama",
       },
       {
-        src: "/images/Xenia/IMG-20250904-WA0021.jpg",
-        alt: "Xenia - Detail Jahitan",
+        src: "/images/Honda/Jazz GK5/IMG-20250908-WA0047.jpg",
+        alt: "Jazz GK5 - Detail Jahitan",
       },
       {
-        src: "/images/Xenia/IMG-20250904-WA0022.jpg",
-        alt: "Xenia - Tampak Samping",
+        src: "/images/Honda/Jazz GK5/_storage_emulated_0_Android_media_com.whatsapp.w4b_WhatsApp Business_Media_WhatsApp Business Images_IMG-20250908-WA0048.jpg",
+        alt: "Jazz GK5 - Tampak Samping",
       },
     ],
   },
-  "luxio": {
-    title: "Luxio",
-    variant: "Premium Carpet",
+  "cr-v-turbo": {
+    title: "CR-V Turbo",
+    variant: "Red Valet + Coil Red",
     description: [
-      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Luxio dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus CR-V Turbo dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
       "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
     ],
     images: [
       {
-        src: "/images/Luxio/Foto dari Iyan.jpg",
-        alt: "Luxio - Premium Carpet - Tampak Utama",
+        src: "/images/Honda/CR-V Turbo/Foto dari Iyan.jpg",
+        alt: "CR-V Turbo - Red Valet Coil Red - Tampak Utama",
       },
       {
-        src: "/images/Luxio/Foto dari Iyan(2).jpg",
-        alt: "Luxio - Detail Jahitan",
+        src: "/images/Honda/CR-V Turbo/Foto dari Iyan(4).jpg",
+        alt: "CR-V Turbo - Detail Jahitan",
       },
       {
-        src: "/images/Luxio/Foto dari Iyan(5).jpg",
-        alt: "Luxio - Tampak Samping",
+        src: "/images/Honda/CR-V Turbo/Foto dari Iyan(5).jpg",
+        alt: "CR-V Turbo - Tampak Samping",
+      },
+    ],
+  },
+  "br-v-2022": {
+    title: "BR-V 2022",
+    variant: "Black Marble + Coil Black",
+    description: [
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus BR-V 2022 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
+      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
+    ],
+    images: [
+      {
+        src: "/images/Honda/BR-V 2022/IMG-20250829-WA0010.jpg",
+        alt: "BR-V 2022 - Black Marble Coil Black - Tampak Utama",
+      },
+      {
+        src: "/images/Honda/BR-V 2022/IMG-20250829-WA0015.jpg",
+        alt: "BR-V 2022 - Detail Jahitan",
+      },
+      {
+        src: "/images/Honda/BR-V 2022/IMG-20250829-WA0016.jpg",
+        alt: "BR-V 2022 - Tampak Samping",
+      },
+    ],
+  },
+  "xpander-2017-now": {
+    title: "Xpander 2017-Now",
+    variant: "Black Marble + Coil Black",
+    description: [
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Xpander 2017-Now dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
+      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
+    ],
+    images: [
+      {
+        src: "/images/Mitsubihshi/Xpander 2017-Now/IMG-20250902-WA0041.jpg",
+        alt: "Xpander 2017-Now - Black Marble Coil Black - Tampak Utama",
+      },
+      {
+        src: "/images/Mitsubihshi/Xpander 2017-Now/IMG-20250902-WA0042.jpg",
+        alt: "Xpander 2017-Now - Detail Jahitan",
+      },
+      {
+        src: "/images/Mitsubihshi/Xpander 2017-Now/IMG-20250902-WA0045.jpg",
+        alt: "Xpander 2017-Now - Tampak Samping",
       },
     ],
   },
   "destinator-2025": {
     title: "Destinator 2025",
-    variant: "Premium Carpet",
+    variant: "Milk Tea + Coil Beige",
     description: [
       "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Destinator 2025 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
       "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
@@ -267,16 +221,85 @@ const productData: Record<string, any> = {
     ],
     images: [
       {
-        src: "/images/Destinator 2025/IMG-20250902-WA0027.jpg",
-        alt: "Destinator 2025 - Premium Carpet - Tampak Utama",
+        src: "/images/Mitsubihshi/Destinator 2025/IMG-20250902-WA0027.jpg",
+        alt: "Destinator 2025 - Milk Tea Coil Beige - Tampak Utama",
       },
       {
-        src: "/images/Destinator 2025/IMG-20250902-WA0029.jpg",
+        src: "/images/Mitsubihshi/Destinator 2025/IMG-20250902-WA0029.jpg",
         alt: "Destinator 2025 - Detail Jahitan",
       },
       {
-        src: "/images/Destinator 2025/IMG-20250902-WA0030.jpg",
+        src: "/images/Mitsubihshi/Destinator 2025/IMG-20250902-WA0030.jpg",
         alt: "Destinator 2025 - Tampak Samping",
+      },
+    ],
+  },
+  "luxio-2010": {
+    title: "Luxio 2010",
+    variant: "Black Marble + Coil Black",
+    description: [
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Luxio 2010 dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
+      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
+    ],
+    images: [
+      {
+        src: "/images/Daihatsu/Luxio/Foto dari Iyan.jpg",
+        alt: "Luxio 2010 - Black Marble Coil Black - Tampak Utama",
+      },
+      {
+        src: "/images/Daihatsu/Luxio/Foto dari Iyan(2).jpg",
+        alt: "Luxio 2010 - Detail Jahitan",
+      },
+      {
+        src: "/images/Daihatsu/Luxio/Foto dari Iyan(5).jpg",
+        alt: "Luxio 2010 - Tampak Samping",
+      },
+    ],
+  },
+  "xenia": {
+    title: "Xenia",
+    variant: "Black Marble + Coil Black",
+    description: [
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Xenia dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
+      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
+    ],
+    images: [
+      {
+        src: "/images/Daihatsu/Xenia/IMG-20250904-WA0019.jpg",
+        alt: "Xenia - Black Marble Coil Black - Tampak Utama",
+      },
+      {
+        src: "/images/Daihatsu/Xenia/IMG-20250904-WA0021.jpg",
+        alt: "Xenia - Detail Jahitan",
+      },
+      {
+        src: "/images/Daihatsu/Xenia/IMG-20250904-WA0022.jpg",
+        alt: "Xenia - Tampak Samping",
+      },
+    ],
+  },
+  "terios": {
+    title: "Terios",
+    variant: "Black Fire + Coil Black",
+    description: [
+      "Upgrade tampilan kabin lo ke level berikutnya dengan karpet premium khusus Terios dari Promate. Dibuat pakai teknologi terbaru yang presisi banget, setiap jahitan ngikutin lekukan kabin mobil lo dengan presisi yang sempurna dari ujung ke ujung.",
+      "Material 7D premium-nya bukan cuma bikin interior keliatan lebih elegan, tapi juga gampang dibershin. Ada lapisan waterproof yang siap ngelindungin lantai mobil dari air, debu, atau kotoran tanpa bikin lembab.",
+      "Cocok buat lo yang pengen kabin tetap rapi, mewah, tapi fungsional. Setiap karpet Promate dibuat khusus sesuai mobil lo, bukan karpet universal yang asal tempel.",
+    ],
+    images: [
+      {
+        src: "/images/Daihatsu/Terios/Foto dari Iyan(1).jpg",
+        alt: "Terios - Black Fire Coil Black - Tampak Utama",
+      },
+      {
+        src: "/images/Daihatsu/Terios/Foto dari Iyan(3).jpg",
+        alt: "Terios - Detail Jahitan",
+      },
+      {
+        src: "/images/Daihatsu/Terios/Foto dari Iyan(4).jpg",
+        alt: "Terios - Tampak Samping",
       },
     ],
   },
